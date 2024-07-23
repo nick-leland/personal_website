@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Your Name</title>
+    <style>
+        /* Include the same styles as the main page */
+        :root {
+            --bg-color: #f0f0f0;
+            --text-color: #333;
+            --link-color: #1d7484;
+            --hover-color: #135766;
+        }
+        .dark-theme {
+            --bg-color: #222;
+            --text-color: #e0e0e0;
+            --link-color: #6ab0c3;
+            --hover-color: #8ec8d8;
+        }
+        body {
+            font-family: Consolas, Monaco, 'Lucida Console', monospace;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header, nav, footer {
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        nav a, .social-link {
+            margin: 0 10px;
+            text-decoration: none;
+            color: var(--link-color);
+        }
+        nav a:hover, .social-link:hover {
+            color: var(--hover-color);
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-bottom: 60px;
+        }
+        #theme-toggle {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--link-color);
+            color: var(--bg-color);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 1em;
+        }
+        #theme-toggle:hover {
+            background-color: var(--hover-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Who I Am</h2>
+            <p>Hello! I'm [Your Name], a [your profession/field] based in [your location]. I'm passionate about [your interests/specialties].</p>
+            
+            <h2>My Background</h2>
+            <p>I have [X] years of experience in [your field]. My journey began [brief description of how you started in your field].</p>
+            
+            <h2>What I Do</h2>
+            <p>Currently, I'm focusing on [current projects or areas of work]. I'm always excited about [aspects of your work that you enjoy].</p>
+            
+            <h2>Beyond Work</h2>
+            <p>When I'm not [working/coding/etc.], you can find me [your hobbies or interests outside of work].</p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://github.com/yourusername" class="social-link">GitHub</a>
+        <a href="https://twitter.com/yourusername" class="social-link">Twitter</a>
+        <a href="mailto:your.email@example.com" class="social-link">Email</a>
+    </footer>
+
+    <button id="theme-toggle">Toggle Theme</button>
+
+    <script>
+        // Include the same theme toggle script as the main page
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark-theme');
+            localStorage.setItem('theme', html.classList.contains('dark-theme') ? 'dark' : 'light');
+        });
+
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        if (savedTheme === 'light') {
+            html.classList.remove('dark-theme');
+        }
+    </script>
+</body>
+</html>
