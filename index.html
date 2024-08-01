@@ -3,62 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Nick Leland - Infinite Space</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #0f0f0f;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #50fa7b;
+        }
+        a {
+            color: #8be9fd;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .ascii-art {
+            font-family: monospace;
+            white-space: pre;
+            line-height: 1.2;
+            color: #bd93f9;
+            margin: 20px 0;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
-    <div class="theme-toggle">
-        <button id="theme-toggle-btn" aria-label="Toggle theme">💡</button>
-    </div>
     <header>
-        <div class="profile-container">
-            <img src="/api/placeholder/200/200" alt="Your Name" class="profile-picture">
-            <div class="header-text">
-                <h1>Your Name</h1>
-                <p>Your Tagline or Brief Description</p>
-            </div>
-        </div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#blog">Blog</a>
-        </nav>
+        <h1>Nick Leland</h1>
+        <p>A Mechanical Engineer looking to transition into the world of Machine Learning.</p>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Introduce yourself here. Share your background, interests, and what you're passionate about.</p>
-        </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>Project 1: Brief description</li>
-                <li>Project 2: Brief description</li>
-                <li>Project 3: Brief description</li>
-            </ul>
-        </section>
+    <div class="ascii-art">
+----------------------------------------
+⣶⣶⣖⣦⡶⣴⣤⡤⣄⣄⣀⣀⡀⣀⣀⣤⣶⣶⣿⣿⣿⣿⣿⣿⣿⣶⣮⣄⣀⣠⣠⣤⣤⡄⢿⡆
+⡿⠿⢿⠿⠿⠿⠿⠿⠿⠾⠿⠿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡉⠉⠉⢹⡃⢼⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠀⢸⡇⢸⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⡿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠰⡃⢸⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⡇⠀⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⡇⢸⡇
+ ⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⠀⠇⠀⠀⡇⡿⢿⠟⡇⡟⡿⡿⢸⣿⣿⣿⣿⡇⡧⢸⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⢻⠝⠒⠛⠍⢁⠀⠀⠀⠀⠀⡉⠉⠑⠂⠈⣿⣿⣿⣗⠇⣸⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⠄⣠⢺⣿⣮⠁⠀⠀⠀⠠⠈⠋⣿⣿⢱⠀⣿⣿⣿⣾⡇⢸⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⡇⣿⠀⠀⠢⠉⠁⠀⠀⠀⠀⠀⠀⠀⠈⠁⠀⢠⣯⢿⣿⢸⡇⢸⡇
+⠀⣀⢤⡠⢄⡀⠀⠀⢀⡐⢿⣷⣈⠇⠀⠀⠀⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⠀⢸⣿⣯⡏⢸⣧⢹⡇
+⠀⢭⢂⠑⠂⠈⠀⢾⣋⡂⠈⣿⣿⣿⣆⠀⠀⠀⠀⠀⠚⣈⠀⠀⠀⠀⠀⢀⣾⣿⣿⠀⢸⣧⢻⣷
+⠀⠀⠀⠀⠀⠀⠀⠜⠃⠋⠑⢸⣿⣿⣿⣧⣀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣾⣿⣿⣿⠀⢸⣧⢻⣿
+⠀⠀⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠋⠛⠻⡿⢿⡇⠂⠠⢀⣀⠠⠔⠊⣝⠟⠛⢻⣿⡇⠀⢸⣿⢸⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠸⣿⠃⠀⢸⣿⡽⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⠀⣿⠀⠀⢸⣿⣽⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣿⡀⠀⢸⣿⣯⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣼⣿⣻⣿
+⣤⣤⣤⣤⣤⣤⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿
+⢯⡙⡭⢡⢣⠘⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷
+----------------------------------------
 
-        <section id="blog">
-            <h2>Recent Blog Posts</h2>
-            <ul>
-                <li><a href="#">Blog Post Title 1</a></li>
-                <li><a href="#">Blog Post Title 2</a></li>
-                <li><a href="#">Blog Post Title 3</a></li>
-            </ul>
-        </section>
-    </main>
+    </div>
+
+    <section class="section">
+
+        <div class="ascii-art">
++----------+
+| About Me |
++----------+
+        </div>
+        <p>Hello! I'm Nicholas Leland, a Mechanical Engineer based in Warwick, Rhode Island. I'm passionate about Machine Learning, currently focusing on vision.</p>
+    </section>
+
+
+    <section class="section">
+        <div class="ascii-art">
++-------------+
+| My Projects |
++-------------+
+        </div>
+        <ul>
+            <li><a href="https://github.com/nick-leland/DistortionML">DistortionML</a> - A Machine Learning model that is capable of detecting and then reversing transformations that are applied to images.</li>
+            <li><a href="https://github.com/nick-leland/rd2l_pred">RD2L Price Prediction</a> - A tool used to predict the player prices for the RD2L drafting process.</li>
+        </ul>
+    </section>
+
+
+    <section class="section">
+        <div class="ascii-art">
++----------------------+
+| Nonsensical Ramblings|
++----------------------+
+        </div>
+        <ul>
+            <li><a href="buildspace-distortionml.html">Buildspace and building DistortionML</a> - August 1st, 2024</li>
+        </ul>
+    </section>
+
+    <div class="ascii-art">
+       +--------+
+       | HMU :D |
+       +--------+
+            \
+             \
+              \
+                |\___/|
+                )     (
+               =\     /=
+                 )===(
+                /     \
+                |     |
+               /       \
+               \       /
+        _/\_/\_/\__  _/_/\_/\_/\_
+        |  |  |  |( (  |  |  |  |
+        |  |  |  | ) ) |  |  |  |
+        |  |  |  |(_(  |  |  |  |
+        |  |  |  |  |  |  |  |  |
+        |  |  |  |  |  |  |  |  |
+    </div>
 
     <footer>
-        <a href="https://github.com/yourusername" class="social-link">GitHub</a>
-        <a href="https://twitter.com/yourusername" class="social-link">Twitter</a>
-        <a href="mailto:your.email@example.com" class="social-link">Email</a>
+        <p>Connect with me:</p>
+        <a href="https://github.com/nick-leland">GitHub</a> |
+        <a href="https://x.com/Chaotic5555">Twitter</a> |
+        <a href="https://www.kaggle.com/nickleland">Kaggle</a> |
+        <a href="nicholasrleland@gmail.com">Email</a>
     </footer>
-
-    <button id="theme-toggle">Toggle Theme</button>
-
-
-    <script src="js/script.js"></script>
 </body>
 </html>
-
