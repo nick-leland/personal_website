@@ -20,3 +20,31 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+# Ignore Firebase config file
+firebaseConfig.js
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore .env files
+.env
+.env.local
+.env.*.local
+
+# Ignore log files
+*.log
+
+# Ignore build output
+build/
+dist/
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
